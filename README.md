@@ -19,5 +19,5 @@ Tous les projets ont été réalisés sur VmWare ou sur Proxmox.
 Chaque dossier de projet contient un `README.md` avec : contexte, architecture, prérequis, étapes de reproduction.
 
 ## Contact
-- Email : noa.fiore@proton.me
-- 
+- Email : noa.fiore[at]proton[dot].me
+ 
