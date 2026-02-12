@@ -5,27 +5,29 @@ Mettre en place une maquette réseau niveau BTS avec des services d’infrastruc
 
 ## Périmètre (ce qui est fait)
 - Domaine Active Directory (utilisateurs, groupes, OU si applicable).
-- Services réseau : DNS / DHCP (si tu l’as fait).
-- Sécurité : pare-feu + règles principales (NAT/ACL si applicable).
+- Services réseau : DNS / DHCP 
+- Sécurité : pare-feu + règles principales.
 - Supervision : outil de monitoring + alertes/dashboards de base.
 - Documentation et tests de validation.
 
 ## Architecture
-- Schéma réseau : [diagrammes/schema-bts.png](./diagrammes/schema-reseau.png
-- Plan d’adressage : [docs/plan-adressage.md](./docs/plan-adressa.md
+- Schéma réseau : [diagramme/schema-bts.png](./diagramme/schema-reseau.png)
+- Plan d’adressage : [docs/plan-adressage.md](./docs/plan-adressa.md)
+- 
 ## Technologies / Stack
-- Virtualisation : ...
-- OS/Services : Windows Server (AD), Linux, ...
-- Supervision : ...
-- Pare-feu : ...
+- Virtualisation : Vmware / VirtualBox
+- OS/Services : Windows Server (AD), Linux (debian,ubuntu,kali linux)
+- Supervision : Zabbix
+- Ticketing : OCS Inventory
+- Serveur Web : Apache
+- Pare-feu : Opnsense
 
 ## Validation (preuves)
-- Tests réalisés : ping, résolution DNS, attribution DHCP, accès aux services, règles FW.
-- Captures / logs : dossier `preuves/` (optionnel).
+- Tests réalisés : ping, résolution DNS, attribution DHCP, GPO, accès aux services, règles FireWall, alertes Zabbix, 
 
 ## Limites / À améliorer
-Ex: pas de haute dispo, pas de PRA, maquette mono-site, etc.
+Serveur de ticketing pas assez configuré / Aucune configuraton Pare-Feu (paramètre par défaut) / Aucun Vlan / Le serveur Zabbix pouvait être amélioré (alerting par téléphone, manque de monitoring)
 
 ## Contact
-Email : prenom.nom [at] domaine [dot] fr
+Email : noa.fiore [at] proton [dot] me
 
