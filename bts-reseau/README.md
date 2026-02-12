@@ -24,8 +24,9 @@ Mettre en place une maquette réseau niveau BTS avec des services d’infrastruc
 - Documentation :
   - Schéma, plan d’adressage, et tests de validation
 
-## Architecture
+## Documents
 - Schéma réseau : [diagramme/schema-bts.png](./diagramme/schema-reseau.png)
+- Plan d’architecture : [docs/plan-architecture.md](./docs/plan-architecture.md)
 - Plan d’adressage : [docs/plan-adressage.md](./docs/plan-adressa.md)
   
 ## Technologies / Stack
