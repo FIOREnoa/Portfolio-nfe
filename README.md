@@ -7,7 +7,7 @@
 Tous les projets ont été réalisés sur VmWare ou sur Proxmox.
 
 - [Projet BTS SIO](./bts-reseau/): réseau LAN + DMZ, Active Directory (AD DS/DNS), DHCP, GPO/OU, segmentation VLAN + routage inter-VLAN, pare-feu (ACL/NAT, DMZ si applicable), supervision (alertes), documentation + tests de validation.
-- 
+  
 - [Projet DevOps](./devops-reseau/): réseau LAN + LAN préprod + DMZ, services d’infra (AD), chaîne CI/CD (GitLab/Jenkins), automatisation (Terraform/Ansible), cluster Kubernetes, supervision (Prometheus/Grafana) et centralisation/analyse de logs
 
 ## Compétences / Stack
