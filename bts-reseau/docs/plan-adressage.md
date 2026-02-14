@@ -20,6 +20,9 @@ Note : dans ce lab, le WAN correspondait au réseau de l’établissement.
 | WEB-01                | Serveur web (Apache) | DMZ | 10.0.0.10      |
 | OCS-01                |OCS Inventory         | LAN | 192.168.10.15  |
 
+## Domaine (AD / DNS)
+- Domaine (FQDN) : GSB.llm
+- Nom NetBIOS : GSB
 
 ## Postes clients
 - Attribution : DHCP
