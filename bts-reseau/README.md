@@ -26,8 +26,8 @@ Mettre en place une maquette réseau niveau BTS avec des services d’infrastruc
 
 ## Documents
 - Schéma réseau : [diagramme/schema-bts.png](./diagramme/schema-reseau.png)
-- Plan d’architecture : [docs/plan-architecture.md](./docs/plan-architecture.md)
-- Plan d’adressage : [docs/plan-adressage.md](./docs/plan-adressa.md)
+- Plan d’architecture : [docs/plan-architecture.md](./docs/architecture.md)
+- Plan d’adressage : [docs/plan-adressage.md](./docs/plan-adressage.md)
   
 ## Technologies / Stack
 - Virtualisation : VMware / VirtualBox
