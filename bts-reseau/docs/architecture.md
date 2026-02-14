@@ -4,7 +4,7 @@
 Décrire la topologie de la maquette BTS, les zones réseau, les composants et les flux principaux.
 
 ## Schéma
-![Schéma réseau](../diagramme/schema-reseau.png)
+[Schéma réseau](../diagramme/schema-reseau.png)
 
 ## Zones réseau
 - LAN : (ex: 192.168.10.0/24) — postes + serveurs internes.
