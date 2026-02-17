@@ -82,14 +82,5 @@ Le projet déploie une infrastructure réseau complète avec 3 zones segmentées
   - Docker >= 24.0
   - kubectl >= 1.28
 - **Accès réseau** : Connectivité vers le pare-feu/routeur
-- **OS** : Windows Server 2019+ (AD), Debian/Ubuntu pour services Linux
+- **OS** : Windows Server 2025 (AD), Debian/Ubuntu pour services Linux
 
----
-
-##  Installation
-
-### 1. Cloner le dépôt
-
-```bash
-git clone https://github.com/FIOREnoa/projet-devops-infra.git
-cd projet-devops-infra
