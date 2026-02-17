@@ -1,9 +1,25 @@
 # Projet Infrastructure DevOps - Automatisation CI/CD & IaC
 
-> Déploiement automatisé d'une infrastructure réseau segmentée (LAN, DMZ, Pré-prod) avec pipeline CI/CD, provisioning IaC et conteneurisation.
 
+##  Contexte
 
-## 🏗️ Architecture
+Encadrement léger : objectifs et composants imposés (ex. Terraform/Ansible, GitLab/Jenkins, Kubernetes, monitoring), mais choix d'implémentation et réalisation en autonomie. J'ai conçu l'architecture, provisionné l'infrastructure (IaC), configuré les pipelines CI/CD, déployé les services en conteneurs, et mis en place la supervision centralisée.
+
+---
+
+##  Objectif
+
+Mettre en place une infrastructure DevOps complète avec :
+- Provisioning automatisé (Terraform)
+- Configuration centralisée (Ansible)
+- Pipeline CI/CD (GitLab/Jenkins)
+- Orchestration de conteneurs (Kubernetes)
+- Segmentation réseau sécurisée (LAN prod, LAN pré-prod, DMZ)
+- Monitoring temps réel (Prometheus/Grafana)
+
+---
+
+##  Architecture
 
 ### Vue d'ensemble
 
@@ -40,7 +56,7 @@ Le projet déploie une infrastructure réseau complète avec 3 zones segmentées
 
 ---
 
-## 🛠️ Technologies
+##  Technologies
 
 | Catégorie | Outils |
 |-----------|--------|
@@ -54,7 +70,7 @@ Le projet déploie une infrastructure réseau complète avec 3 zones segmentées
 
 ---
 
-## ⚙️ Prérequis
+##  Prérequis
 
 - **Hyperviseur** : Proxmox, VMware ESXi ou VirtualBox
 - **Outils DevOps** :
@@ -67,11 +83,12 @@ Le projet déploie une infrastructure réseau complète avec 3 zones segmentées
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Cloner le dépôt
 
 ```bash
 git clone https://github.com/FIOREnoa/projet-devops-infra.git
 cd projet-devops-infra
+
 
