@@ -1,9 +1,13 @@
-# Projet Infrastructure DevOps - Automatisation CI/CD & IaC
+# Projet Infrastructure DevOps - Automatisation CI/CD & IaC 
+
+  ## Attention : Projet en cours de dévéloppement 
 
 
 ##  Contexte
 
-Encadrement léger : objectifs et composants imposés (ex. Terraform/Ansible, GitLab/Jenkins, Kubernetes, monitoring), mais choix d'implémentation et réalisation en autonomie. J'ai conçu l'architecture, provisionné l'infrastructure (IaC), configuré les pipelines CI/CD, déployé les services en conteneurs, et mis en place la supervision centralisée.
+Encadrement partiel : l’objectif est de concevoir et mettre en œuvre une démarche DevOps de bout en bout, incluant le déploiement d’une application. Dans notre cas, il s’agit d’une application de réservation de mototaxi.
+
+Le projet est réalisé en autonomie : il n’y a pas forcément de composants imposés (outils, stack, architecture), et les choix techniques nous reviennent. Les enseignants interviennent surtout à la demande : si nous rencontrons un blocage ou avons besoin de validation d’orientation, ils nous aiguillent et proposent des pistes, sans fournir une solution complète
 
 ---
 
@@ -13,8 +17,8 @@ Mettre en place une infrastructure DevOps complète avec :
 - Provisioning automatisé (Terraform)
 - Configuration centralisée (Ansible)
 - Pipeline CI/CD (GitLab/Jenkins)
-- Orchestration de conteneurs (Kubernetes)
-- Segmentation réseau sécurisée (LAN prod, LAN pré-prod, DMZ)
+- Orchestration de conteneurs (Kubernetes et docker)
+- Segmentation réseau sécurisée (LAN, LAN pré-prod, DMZ)
 - Monitoring temps réel (Prometheus/Grafana)
 
 ---
@@ -25,26 +29,25 @@ Mettre en place une infrastructure DevOps complète avec :
 
 Le projet déploie une infrastructure réseau complète avec 3 zones segmentées :
 
-- **LAN (192.168.1.0/24)** : Environnement de production
-  - Serveur AD (Active Directory)
-  - Cluster Kubernetes (192.168.1.x)
+- **LAN (192.168.1.0/24)** : Environnement interne
+  - Serveur AD (Active Directory avec le domaine mototaxi.llm
+  - Cluster Kubernetes (A précisé)
   - PCs clients (192.168.1.20 - 192.168.1.40)
   
-- **LAN Pré-prod** : Environnement de validation avant production
-  - Serveur AD
-  - PCs tests
-
-- **DMZ (10.0.0.0/24)** : Zone démilitarisée exposée
+- **LAN Pré-prod** : Environnement de validation avant production (Miroir de la DMZ)
   - Docker (conteneurs applicatifs)
   - Serveur Web
-  - Hosting (hébergement)
+
+- **DMZ (10.0.0.0/24)** : 
+  - Docker (conteneurs applicatifs)
+  - Serveur Web
 
 ### Outils DevOps (Infrastructure LAN)
 
-- **Terraform / Ansible** : Provisioning et configuration (192.168.1.2 - 192.168.1.10)
+- **Terraform / Ansible** : Provisioning et configuration (A préciser )
 - **GitLab / Jenkins** : Pipeline CI/CD
 - **Kubernetes** : Orchestration de conteneurs (cluster production)
-- **Prometheus / Grafana** : Monitoring et visualisation (192.168.1.x)
+- **Prometheus / Grafana** : Monitoring et visualisation (192.168.1.4)
 
 ### Sécurité & Routage
 
