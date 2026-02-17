@@ -1,1 +1,77 @@
+# Projet Infrastructure DevOps - Automatisation CI/CD & IaC
+
+> Déploiement automatisé d'une infrastructure réseau segmentée (LAN, DMZ, Pré-prod) avec pipeline CI/CD, provisioning IaC et conteneurisation.
+
+
+## 🏗️ Architecture
+
+### Vue d'ensemble
+
+Le projet déploie une infrastructure réseau complète avec 3 zones segmentées :
+
+- **LAN (192.168.1.0/24)** : Environnement de production
+  - Serveur AD (Active Directory)
+  - Cluster Kubernetes (192.168.1.x)
+  - PCs clients (192.168.1.20 - 192.168.1.40)
+  
+- **LAN Pré-prod** : Environnement de validation avant production
+  - Serveur AD
+  - PCs tests
+
+- **DMZ (10.0.0.0/24)** : Zone démilitarisée exposée
+  - Docker (conteneurs applicatifs)
+  - Serveur Web
+  - Hosting (hébergement)
+
+### Outils DevOps (Infrastructure LAN)
+
+- **Terraform / Ansible** : Provisioning et configuration (192.168.1.2 - 192.168.1.10)
+- **GitLab / Jenkins** : Pipeline CI/CD
+- **Kubernetes** : Orchestration de conteneurs (cluster production)
+- **Prometheus / Grafana** : Monitoring et visualisation (192.168.1.x)
+
+### Sécurité & Routage
+
+- **Pare-feu du lycée** : Filtrage entrant (adresse IP publique)
+- **Routage WAN/LAN/DMZ** : Analyse de logs et segmentation réseau
+- **NAT 192.168 → 10.0.0** : Isolation DMZ
+
+![Architecture réseau](docs/architecture.png)
+
+---
+
+## 🛠️ Technologies
+
+| Catégorie | Outils |
+|-----------|--------|
+| **IaC** | Terraform, Ansible |
+| **CI/CD** | GitLab CI / Jenkins |
+| **Conteneurs** | Docker, Kubernetes |
+| **Serveurs** | Windows Server (AD DS), Linux (Apache, Docker) |
+| **Monitoring** | Prometheus, Grafana, analyse de logs |
+| **Réseau** | Segmentation VLAN, pare-feu multi-zones, NAT |
+| **Versioning** | Git, GitLab |
+
+---
+
+## ⚙️ Prérequis
+
+- **Hyperviseur** : Proxmox, VMware ESXi ou VirtualBox
+- **Outils DevOps** :
+  - Terraform >= 1.5
+  - Ansible >= 2.14
+  - Docker >= 24.0
+  - kubectl >= 1.28
+- **Accès réseau** : Connectivité vers le pare-feu/routeur
+- **OS** : Windows Server 2019+ (AD), Debian/Ubuntu pour services Linux
+
+---
+
+## 🚀 Installation
+
+### 1. Cloner le dépôt
+
+```bash
+git clone https://github.com/FIOREnoa/projet-devops-infra.git
+cd projet-devops-infra
 
