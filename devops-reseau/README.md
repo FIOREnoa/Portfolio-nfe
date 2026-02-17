@@ -31,10 +31,14 @@ Le projet déploie une infrastructure réseau complète avec 3 zones segmentées
 
 - **LAN (192.168.1.0/24)** : Environnement interne
   - Serveur AD (Active Directory avec le domaine mototaxi.llm
-  - Cluster Kubernetes (A précisé)
+  - Prometheus / Grafana (_A préciser_)
+  - Gitlab / Jenkins (_A préciser_)
+  - Terraform / Ansible (_A préciser_)
+  - Cluster Kubernetes (_A préciser_)
+  - Elasticsearch (_A préciser_)
   - PCs clients (192.168.1.20 - 192.168.1.40)
   
-- **LAN Pré-prod** : Environnement de validation avant production (Miroir de la DMZ)
+- **LAN Pré-prod (10.10.0.0)** : Environnement de validation avant production (Miroir de la DMZ)
   - Docker (conteneurs applicatifs)
   - Serveur Web
 
@@ -44,10 +48,10 @@ Le projet déploie une infrastructure réseau complète avec 3 zones segmentées
 
 ### Outils DevOps (Infrastructure LAN)
 
-- **Terraform / Ansible** : Provisioning et configuration (A préciser )
+- **Terraform / Ansible** : Provisioning et configuration (_A préciser_)
 - **GitLab / Jenkins** : Pipeline CI/CD
-- **Kubernetes** : Orchestration de conteneurs (cluster production)
-- **Prometheus / Grafana** : Monitoring et visualisation (192.168.1.4)
+- **Kubernetes / Docker** : Orchestration de conteneurs (cluster production)
+- **Prometheus / Grafana** : Monitoring et visualisation (_A préciser_)
 
 ### Sécurité & Routage
 
@@ -67,20 +71,16 @@ Le projet déploie une infrastructure réseau complète avec 3 zones segmentées
 | **CI/CD** | GitLab CI / Jenkins |
 | **Conteneurs** | Docker, Kubernetes |
 | **Serveurs** | Windows Server (AD DS), Linux (Apache, Docker) |
-| **Monitoring** | Prometheus, Grafana, analyse de logs |
+| **Monitoring** | Prometheus, Grafana,|
+|**Analyse de logs**| Elasticsearch, |
 | **Réseau** | Segmentation VLAN, pare-feu multi-zones, NAT |
 | **Versioning** | Git, GitLab |
 
 ---
 
-##  Prérequis
+## Prérequis
 
-- **Hyperviseur** : Proxmox, VMware ESXi ou VirtualBox
-- **Outils DevOps** :
-  - Terraform >= 1.5
-  - Ansible >= 2.14
-  - Docker >= 24.0
-  - kubectl >= 1.28
-- **Accès réseau** : Connectivité vers le pare-feu/routeur
-- **OS** : Windows Server 2025 (AD), Debian/Ubuntu pour services Linux
+- En cours de définition.
+- Objectif : documenter progressivement les versions/outils nécessaires (Jenkins, Terraform, Ansible, Docker/Kubernetes, monitoring).
+
 
