@@ -59,7 +59,7 @@ Le projet déploie une infrastructure réseau complète avec 3 zones segmentées
 - **Routage WAN/LAN/DMZ** : Analyse de logs et segmentation réseau
 - **NAT 192.168 → 10.0.0** : Isolation DMZ
 
-![Schéma réseau](diagramme/schéma-DEVOPS.drawio.png)
+[Schéma réseau](diagramme/schéma-DEVOPS.drawio.png)
 
 ---
 
