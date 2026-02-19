@@ -57,7 +57,7 @@ Le projet déploie une infrastructure réseau complète avec 3 zones segmentées
 
 - **Pare-feu du lycée** : Filtrage entrant (adresse IP publique)
 - **Routage WAN/LAN/DMZ** : Analyse de logs et segmentation réseau
-- **NAT 192.168 → 10.0.0** : Isolation DMZ
+- Segmentation LAN/DMZ : routage inter-zones contrôlé par le pare-feu (règles strictes DMZ → LAN, ouverture minimale).
 
 [Schéma réseau](diagramme/schéma-DEVOPS.png)
 
