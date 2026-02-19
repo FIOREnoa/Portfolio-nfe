@@ -60,7 +60,7 @@ Le projet déploie une infrastructure réseau complète avec 3 zones segmentées
 - **NAT 192.168 → 10.0.0** : Isolation DMZ
 
 ![Architecture réseau (en cours)](docs/architecture.png)
-![Schéma réseau](diagramme/schéma-DEVOPS.drawio.png)
+[Schéma réseau](diagramme/schéma-DEVOPS.drawio.png)
 
 ---
 
